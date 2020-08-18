@@ -1,5 +1,12 @@
-function generateError(message: string, code: number): never {
-    throw { message, code };
+function add(n1: number, n2: number): number {
+    return n1 + n2;
 }
 
-generateError("error occured!", 500);
+function concat(s1: string, s2: string): string {
+    return s1 + s2;
+}
+
+let plus: (a: number, b: number) => number;
+
+plus = add;
+plus = concat;
