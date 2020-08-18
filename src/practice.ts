@@ -1,12 +1,5 @@
-enum Role {USER, ADMIN, SUPER_ADMIN};
+function generateError(message: string, code: number): never {
+    throw { message, code };
+}
 
-console.log(Role);
-
-const yunhwan = {
-    name: "yunhwan",
-    age: 29,
-    hobbies: ["basketball", "game"],
-    role: Role[2]
-};
-
-console.log(yunhwan.role);
+generateError("error occured!", 500);
