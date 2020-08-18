@@ -1,12 +1,7 @@
-function add(n1: number, n2: number): number {
-    return n1 + n2;
-}
+let userInput: unknown;
+let userName: string;
 
-function concat(s1: string, s2: string): string {
-    return s1 + s2;
-}
+userInput = 5;
+userInput = "윤환";
 
-let plus: (a: number, b: number) => number;
-
-plus = add;
-plus = concat;
+userName = userInput;
